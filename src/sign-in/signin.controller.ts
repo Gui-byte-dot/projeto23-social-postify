@@ -1,6 +1,7 @@
 import { Controller, Post, Body } from '@nestjs/common';
 import { SignInService } from './signin.service';
 import {AddSignin} from './schema/addSignin';
+import { UsersService } from 'src/users/user.service';
 
 @Controller('sign-in')
 export class SignInController {
